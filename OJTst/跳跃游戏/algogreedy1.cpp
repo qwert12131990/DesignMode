@@ -1,30 +1,18 @@
 class Solution {
   public:
     bool canJump(vector<int>& nums) {
-            int max=0;
-    
-            for(int i=0; i<nums.size()-1 && max >= i ;i++)
+            int n = nums.size() - 1, m = nums[0];
+            for (int i = 0; i < m + 1; i++)
             {
-                        int nextpos = nums[i]+i;
-            
-                        if (nums[i] ==0 && max == nextpos)
-                        {
-                                        return false;
-                                    }
-            
-                        max = max>nextpos?max:nextpos;
-            
-                        if (max >= nums.size()-1)
-                        {
-                                        return true;
-                                    }
+                        m = max(nums[i] + i, m);
+                        if (m+1 > n) return true;
                     }
-    
-            return max >= nums.size()-1;
+            return false;
         }
-
 };
+
 /*
+ *
  *贪心算法
  *跳跃中每个元素，包含两部分
  * 1、要求当前元素是否可被到达
