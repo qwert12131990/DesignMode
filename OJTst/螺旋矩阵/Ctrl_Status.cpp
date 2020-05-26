@@ -6,10 +6,6 @@ public:
         int size=x*y;
         int w0=0,w1=x-1,h0=0,h1=y-1;
         int i=0,j=0;
-        bool right=true;
-        bool left=false;
-        bool top=false;
-        bool bottom=false;
         int status;
         //status:
         //0:right
@@ -21,8 +17,8 @@ public:
         for(int m=0; m<size; m++)
         {
             rslt[m]=matrix[j][i];
-            cout<<i<<":"<<j<<"_"<<matrix[j][i]<<endl;
-            cout<<"\t"<<w0<<":"<<w1<<":"<<h0<<":"<<h1<<endl;
+            //cout<<i<<":"<<j<<"_"<<matrix[j][i]<<endl;
+            //cout<<"\t"<<w0<<":"<<w1<<":"<<h0<<":"<<h1<<endl;
 
             switch(status)
             {
