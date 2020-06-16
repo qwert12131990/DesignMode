@@ -32,13 +32,6 @@ public:
             return currRslt;
         }
 
-        if (start == end)
-        {
-            TreeNode* currNode = new TreeNode(start);
-            currRslt.push_back(currNode);
-            return currRslt;
-        }
-
         for(int i=start;i<=end;i++)
         {
             if (!isleft&&father&&tmp[father][i].size())
@@ -52,30 +45,31 @@ public:
 
             if (isleft&&father&&tmp[i][father].size())
             {
-                right=tmp[i][father];
+                right = tmp[i][father];
             }
             else
             {
                 right = trees(i+1,end,i,false,tmp);
             }
 
-            for(int m=0;m<left.size();m++)
+            for(TreeNode* pl:left)
             {
-                for(int n=0;n<right.size();n++)
+                for(TreeNode* pr:right)
                 {
                     TreeNode* currNode=new TreeNode(i);
-                    currNode->left=left[m];
-                    currNode->right=right[n];
+                    currNode->left=pl;
+                    currNode->right=pr;
                     currRslt.push_back(currNode);
-                    if (isleft)
-                    {
-                        tmp[i][father]=right;
-                    }
-                    else
-                    {
-                        tmp[father][i]=left;
-                    }
                 }
+            }
+
+            if (isleft)
+            {
+                tmp[i][father]=right;
+            }
+            else
+            {
+                tmp[father][i]=left;
             }
         }
         return currRslt;
