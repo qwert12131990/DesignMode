@@ -1,0 +1,214 @@
+visitor:15
+visitor:14
+visitor:13
+visitor:12
+visitor:11
+visitor:10
+visitor:9
+visitor:8
+visitor:7
+visitor:6
+visitor:5
+visitor:4
+visitor:3
+visitor:2
+visitor:1
+path[1]:1000000000
+rslt:1000000000
+path[2]:1000000000
+rslt:1000000000
+visitor:25
+visitor:24
+visitor:23
+visitor:22
+visitor:21
+visitor:20
+visitor:19
+visitor:18
+visitor:17
+visitor:16
+visitor:26
+visitor:27
+visitor:28
+visitor:34
+visitor:33
+visitor:32
+visitor:31
+visitor:30
+visitor:29
+visitor:35
+visitor:36
+visitor:37
+rslt:1
+path[36]:1
+rslt:2
+path[35]:2
+rslt:3
+path[29]:3
+rslt:4
+visitor:36
+jian zhi:36 1
+rslt:2
+path[30]:2
+rslt:3
+path[31]:3
+rslt:4
+path[32]:4
+rslt:5
+path[33]:5
+rslt:6
+visitor:35
+jian zhi:35 2
+rslt:3
+path[34]:3
+rslt:4
+visitor:29
+jian zhi:29 3
+rslt:4
+path[28]:4
+rslt:5
+path[27]:5
+rslt:6
+path[26]:6
+rslt:7
+path[16]:7
+rslt:8
+path[17]:8
+rslt:9
+visitor:31
+jian zhi:31 3
+rslt:4
+visitor:32
+jian zhi:32 4
+rslt:4
+path[18]:4
+rslt:5
+path[19]:5
+rslt:6
+visitor:37
+rslt:1
+path[20]:1
+rslt:2
+visitor:16
+jian zhi:16 7
+rslt:2
+visitor:26
+jian zhi:26 6
+rslt:2
+path[21]:2
+rslt:3
+path[22]:3
+rslt:4
+visitor:27
+jian zhi:27 5
+rslt:4
+path[23]:4
+rslt:5
+visitor:22
+jian zhi:22 3
+rslt:4
+path[24]:4
+rslt:5
+visitor:28
+jian zhi:28 4
+rslt:5
+visitor:34
+jian zhi:34 3
+rslt:4
+visitor:26
+jian zhi:26 6
+rslt:4
+path[25]:4
+rslt:5
+visitor:28
+jian zhi:28 4
+rslt:5
+visitor:34
+jian zhi:34 3
+rslt:4
+path[3]:4
+rslt:5
+visitor:23
+jian zhi:23 4
+rslt:5
+visitor:27
+jian zhi:27 5
+rslt:5
+path[4]:5
+rslt:6
+visitor:22
+jian zhi:22 3
+rslt:4
+visitor:24
+jian zhi:24 4
+rslt:4
+path[5]:4
+rslt:5
+visitor:33
+jian zhi:33 5
+rslt:5
+path[6]:5
+rslt:6
+visitor:17
+jian zhi:17 8
+rslt:6
+path[7]:6
+rslt:7
+path[8]:7
+rslt:8
+visitor:6
+jian zhi:6 5
+rslt:6
+visitor:33
+jian zhi:33 5
+rslt:6
+path[9]:6
+rslt:7
+visitor:20
+jian zhi:20 1
+rslt:2
+visitor:37
+rslt:1
+path[10]:1
+rslt:2
+path[11]:2
+rslt:3
+path[12]:3
+rslt:4
+visitor:18
+jian zhi:18 4
+rslt:4
+visitor:31
+jian zhi:31 3
+rslt:4
+visitor:32
+jian zhi:32 4
+rslt:4
+path[13]:4
+rslt:5
+visitor:5
+jian zhi:5 4
+rslt:5
+visitor:22
+jian zhi:22 3
+rslt:4
+visitor:24
+jian zhi:24 4
+rslt:4
+path[14]:4
+rslt:5
+visitor:16
+jian zhi:16 7
+rslt:5
+path[15]:5
+rslt:6
+visitor:1
+visitor:2
+visitor:3
+jian zhi:3 4
+rslt:5
+path[2]:5
+rslt:6
+path[1]:6
+rslt:6
+path[0]:6
