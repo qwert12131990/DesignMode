@@ -1,0 +1,45 @@
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& heights) {
+        int n = heights.size();
+        vector<vector<int>> dp(n, vector<int>(n, -1));
+        int minval = 1000000;
+        
+        for(int i=0; i<n; i++){
+            dp[i][i] = heights[i];
+            minval = min(minval, heights[i]);
+        }
+        
+        return dfs(heights, dp, 0, n-1);
+        
+    }
+    
+    int dfs(vector<int>& heights, vector<vector<int>>& dp, int i, int j){
+        
+        int maxval = 0;
+        int leftborder = 0;
+        int rightborder = 0;
+        
+        if (i == j){
+            return heights[i];
+        }
+        
+        leftborder = i-1 >=0 ? i-1 : 0;
+        rightborder = j+1 < heights.size() ? j+1 : heights.size() - 1;
+        if (dp[leftborder][j] != -1 && dp[i][rightborder] != -1){
+            dp[i][j] = min(dp[leftborder][j], dp[i][rightborder]);
+        }
+        else{
+            int tmpminval = 100000000;
+            for(int k=i; k<=j; k++){
+                tmpminval = min(heights[k], tmpminval);
+            }
+            dp[i][j] = tmpminval;                
+        }
+      
+        maxval = max(dp[i][j]*(j-i+1), maxval);
+        maxval = max(dfs(heights, dp, i+1, j), maxval);
+        maxval = max(dfs(heights, dp, i, j-1), maxval);
+        return maxval;
+    }
+};
