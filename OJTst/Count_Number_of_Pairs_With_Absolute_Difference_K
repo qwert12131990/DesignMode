@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int countKDifference(vector<int>& nums, int k) {
+        map<int,int> mtmp;
+        int rslt = 0;
+        sort(nums.begin(), nums.end());
+
+        for(int i=0; i<nums.size(); i++){
+            int tmp0 = nums[i] + k;
+            int tmp1 = nums[i] - k;
+            mtmp[tmp0]++;
+            mtmp[tmp1]++;
+            if (mtmp.count(nums[i])>0){
+                rslt += mtmp[nums[i]];
+            }
+        }
+        return rslt;
+    }
+};
+/*
+* 道理上说，数组中每个值需要的是n+k和n-k，如果我们记录出数组中所需的值次数，并且知道哪些所需值在nums中有，那么这些次数相加
++ 视为次数综合
+*
+*/
